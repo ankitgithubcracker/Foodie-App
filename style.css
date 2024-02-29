@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --primary-clr:#0b6934;
+    --secondary-clr:#08351c;
+    --third-clr:#f98169;
+    --white-clr:#fff;
+    --text-clr:#555;
+    --text-grey:#999;
+    --black-clr:#000;
+    --primary-font:'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+
+:active,
+:hover,
+:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover{
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--primary-clr) !important;
+}
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+}
+
+/* =======Custom Scrollbar======= */
+
+::-webkit-scrollbar{
+    width: 0.625rem;
+}
+::-webkit-scrollbar-track{
+    background: var(--white-clr);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--primary-clr);
+}
+
+
+/* ====== Custom CSS Desgin ======= */
+
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--secondary-clr);
+}
+h2{
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: var(--primary-font);
+    color: var(--secondary-clr);
+    line-height: 3rem;
+}
+h4{
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+    font-family: var(--primary-font);
+    color: var(--secondary-clr);
+}
+h5{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+    font-family: var(--primary-font);
+    color: var(--primary-clr);
+}
+p{
+    font-size: 1rem;
+    color: var(--text-clr);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+.main-btn{
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    background-color: var(--primary-clr);
+    border: 0.2875rem solid var(--primary-clr);
+    color: var(--white-clr);
+    font-size: .9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0 2px 10px -1px rgba(0 0 0 / 19%);
+    transition: all .4s ease-out 0s;
+}
+.white-btn{
+    padding: 0.625rem 1.875rem;
+    line-height: 25px;
+    background-color: var(--white-clr);
+    border: 0.2875rem solid var(--white-clr);
+    color: var(--text-clr);
+    font-size: .9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0 2px 10px -1px rgba(0 0 0 / 19%);
+    transition: all .4s ease-out 0s;
+}
+.main-btn:hover{
+    background-color:transparent;
+    color:  var(--primary-clr);
+
+}
+.white-btn:hover{
+    background-color:transparent;
+    color:  var(--primary-clr);
+    border-color:  var(--primary-clr);
+}
+.wrapper{
+    padding: 8.25rem 0;
+}
+
+.text-content{
+    width: 70%;
+    margin: auto;
+}
+.counter-section h2,
+.testinomial-section h2,
+.book-food-text h2{
+    color:  var(--white-clr);
+}
+
+
+/* ======== Header Design ========= */
+
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    transition: all .3s ease-out;
+}
+
+.navigation-wrap .nav-item{
+    padding: 0 10px;
+    transition: all 200ms linear;
+}
+
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.nav-link{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-clr);
+    letter-spacing: 1px;
+}
+.navigation-wrap .main-btn{
+    padding: 5px 24px;
+    box-shadow: none;
+    margin-left: 10px;
+}
+
+.nav-img{
+    height: 5rem;
+    width: 7rem;
+    
+}
+
+.navigation-wrap.scroll-on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white-clr);
+    box-shadow: 0 2px 26px 0 rgba(0, 0, 0, .1);
+}
+
+.top-banner{
+    width: 100%;
+    background: url(img/bg2.jpg) no-repeat center;
+    background-size: cover;
+    padding: 15.875rem 0 9.275rem;
+}
+
+.counter-section{
+    background-color: var(--primary-clr);
+    padding: 2.5rem 0;
+}
+.counter-section p{
+    color: var(--white-clr);
+    text-transform: uppercase;
+}
+
+
+.about-section{
+    background: var(--white-clr);
+}
+
+.about-section .card,
+.about-section .card img{
+    border-radius: 10px;
+}
+
+.about-section .text-sec{
+    padding: 2rem;
+}
+
+
+.food-type{
+    padding-top: 3.25rem;
+}
+.food-type ul li{
+    font-size: 1rem;
+    color: var(--text-clr);
+    line-height: 32px;
+    position: relative;
+    margin-left: 30px;
+}
+.food-type ul li::before{
+    position: absolute;
+    left: -2.2rem;
+    color: var(--primary-clr);
+    font-size: 1.23rem;
+    font-family: "Font Awesome 5 Free";
+    content: '\f00c';
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+}
+.story-section{
+    width: 100%;
+    height: 28.125rem;
+    background: url(img/bg1.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 100px;
+    text-align: center;
+}
+.story-section p{
+    color: var(--primary-clr);
+    font-weight: 500;
+}
+
+
+.explore-food .card{
+    border: none;
+    background-color: transparent;
+    border-radius: .9375rem;
+}
+.explore-food .card img{
+    border-radius: .9375rem;
+    object-fit: cover;
+}
+.explore-food .card span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-clr);
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+.explore-food .card span del{
+    color: var(--text-grey);
+    margin-left: 8px;
+}
+
+.testimonial-section{
+    background:url(img/bg3.jpg) no-repeat center;
+    background-size: cover;
+}
+.testimonial-section .carousel-item{
+    margin-top: 3rem;
+    padding: 10rem 3.3125rem;
+    background-color: var(--white-clr);
+    border-radius: 15px;
+    text-align: center;
+}
+.testimonial-section .carousel-caption img{
+    max-width: 9rem;
+    border-radius: 50%;
+    padding: 0.3125rem;
+}
+.testimonial-section .carousel-item .carousel-caption p{
+    font-size: 1.3125rem;
+    line-height: 33px;
+    padding: 0 11% 10px;
+}
+.testimonial-section .carousel-indicators{
+    bottom: -2.8125rem;
+}
+.testimonial-section .carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin-right: 1rem;
+    opacity: 0.2;
+}
+.testimonial-section .carousel-indicators button.active{
+    opacity: 1;
+}
+
+
+.faq h4 span{
+    color: var(--primary-clr);
+    font-size: 1.575rem;
+    margin-right: 0.3125rem;
+}
+
+.book-food{
+    width: 100%;
+    background: url(img/bg4.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: 0 72px;
+    padding: 70px 0;
+}
+
+
+.newsletter{
+    width: 55%;
+    margin: 0 auto;
+    /* display: flex; */
+}
+.newsletter .form-control{
+    height: 3.125rem;
+    padding: 0 1.125rem;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border: 3px solid var(--text-grey);
+    color: var(--black-clr);
+    font-weight: 700;
+}
+.newsletter .form-contol:hover,
+.newsletter .form-contol:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: var(--primary-clr);
+}
+
+
+.footer{
+    background-color: var(--primary-clr);
+}
+.footer .footer-link{
+    font-size: 1rem;
+    color: var(--white-clr);
+    padding: 0 1.875rem;
+}
+.footer .footer-link:hover{
+    color: var(--white-clr) !important;
+}
+footer a i{
+    font-size: 1.5rem;
+    color: var(--white-clr);
+    padding: 0 1rem;
+}
